@@ -4,6 +4,7 @@ using namespace std;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // procekt v0.2   90
 // proverka v 0.2 
 =======
@@ -12,6 +13,9 @@ using namespace std;
 =======
 // procekt v0.2  
 >>>>>>> parent of e26d3f5... v0.2
+=======
+// procekt v0.2
+>>>>>>> parent of 511dcf7... v0.1
 int main()
  {
  	int arr[5] = {3,5,7,6,9};  
