@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-// procekt v0.2  
+// procekt v0.2   90
+// proverka v 0.2 
 int main()
  {
  	int arr[5] = {3,5,7,6,9};  
