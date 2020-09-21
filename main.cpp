@@ -2,16 +2,7 @@
 #include <string>
 using namespace std;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// procekt v0.2   90
-// proverka v 0.2 
-=======
-// procekt v0.2   
->>>>>>> f9284a68d0b806cc51da034817016f7846e9c127
-=======
-// procekt v0.2  
->>>>>>> parent of e26d3f5... v0.2
+
 int main()
  {
  	int arr[5] = {3,5,7,6,9};  
