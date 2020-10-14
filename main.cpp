@@ -18,8 +18,124 @@ void quickSortR(int* arr, 		//quick sort
 int SIZE); 
 
 
+
+
+
+struct Node
+{
+	int data;
+	Node *next;
+};
+
+Node *head, *tail;
+
+void PrintStruct()
+{
+	
+	Node *tmp = head;
+	
+	while(tmp != NULL)
+	{
+		cout << tmp -> data << "\t";
+		
+		tmp = tmp -> next;
+	}
+	
+	cout << endl << endl;
+}
+
+void AddTail()
+{
+	
+	int a;
+	
+	Node *Four = new Node();
+	
+	cout << "set the data: ";
+	
+	cin >> a;
+	Four -> data = a;
+	
+	tail -> next = Four;
+	Four -> next = NULL;
+	tail = Four;
+	
+}
+
+void AddHead()
+{
+	int a;
+	
+	Node *Fst = new Node();
+	
+	cout << "set the data: ";
+	
+	cin >> a;
+	Fst -> data = a;
+	
+	Fst -> next = head;
+	head = Fst;
+	 
+}
+
+void DelEl()
+{
+	int a;
+	int i;
+	Node *current = head;
+	Node * currentPrev;
+	
+	cout << "chose the element for delete: ";
+	
+	cin >> a;
+	
+	while(a != i)
+	{
+		
+		
+		if(i != 1)
+		{
+			currentPrev = head;
+		}
+		else if(i == 0 && i > 1)
+		{
+			currentPrev = head -> next;
+		}
+		
+		current = current -> next;
+		
+		i++;
+	}
+	
+	if(current != head)
+	{
+		
+		
+	}	
+	
+	
+	
+}
+
 int main()
  {
+ 	Node *First = new Node();
+ 	Node *Second = new Node();
+ 	Node *Third = new Node();
+ 	
+ 	
+ 	First -> data = 10;
+ 	First -> next = Second;
+ 	
+ 	Second -> data = 15;
+ 	Second -> next = Third;
+ 	
+ 	Third -> data = 20;
+ 	Third -> next = NULL;
+ 	
+ 	head = First;
+ 	tail = Third;
+ 	 		
  	int arr[5] = {9,6,2,3,4};
  	
  	int command;
@@ -82,6 +198,22 @@ int main()
 			}			
 			cout << endl << endl;
 		break;
+		
+		case 10:
+			PrintStruct();
+		break;
+		
+		case 11:
+			AddTail();
+		break;
+		
+		case 12:
+			AddHead();
+			break;
+			
+		case 13:
+			DelEl();
+			break;	
 		
 		case 0:
 			return 0;
